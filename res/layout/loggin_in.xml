@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/nine"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxEms="10"
+        android:text="@string/empty" >
+
+    
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/nine"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="username"
+        android:inputType="text"
+        android:maxEms="10"
+        android:text="@string/empty" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/login"
+        android:text="Button"
+        android:src ="@drawable/loginn"
+        
+         />
+
+</RelativeLayout>
