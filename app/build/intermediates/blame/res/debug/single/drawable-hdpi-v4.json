@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\button_plus_red.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\button_plus_red.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sal.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\sal.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\status_offline.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\status_offline.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\option.PNG",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\option.PNG"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\loginn.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\loginn.xml"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_box.PNG",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\login_box.PNG"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\status_online.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\status_online.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\logo.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\notification.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_pressed.png",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\login_pressed.png"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sign_up.PNG",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\sign_up.PNG"
+    },
+    {
+        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_button.PNG",
+        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\drawable-hdpi\\login_button.PNG"
+    }
+]

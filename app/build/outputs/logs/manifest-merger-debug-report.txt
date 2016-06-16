@@ -1,0 +1,101 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:1:1-59:12
+	xmlns:android
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:1:11-69
+	package
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:2:5-42
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:23.2.1] D:\hocky2\SelectedTopic\AndroidChatter\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+		INJECTED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:11:2-75
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:11:19-73
+application
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:13:5-56:15
+MERGED from [com.android.support:support-v4:23.2.1] D:\hocky2\SelectedTopic\AndroidChatter\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:15:9-41
+	android:allowBackup
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.TeamHoangDangTu.ChatApp.ListOfFriends
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:17:5-25:14
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:17:72-108
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:17:15-71
+intent-filter#android.intent.action.MAIN+android.intent.category.NORMAL
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:18:4-23:20
+action#android.intent.action.MAIN
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:19:5-64
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:19:13-54
+category#android.intent.category.NORMAL
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:20:5-22:16
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:21:6-51
+service#com.TeamHoangDangTu.ChatApp.serve.MessagingService
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:26:3-88
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:26:12-77
+activity#com.TeamHoangDangTu.ChatApp.LoggingIn
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:27:3-33:14
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:27:67-103
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:27:13-65
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:28:4-32:20
+category#android.intent.category.LAUNCHER
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:30:5-31:16
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:30:15-62
+activity#com.TeamHoangDangTu.ChatApp.PerformingMessaging
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:34:3-41:14
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:34:77-113
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:34:13-75
+activity#com.TeamHoangDangTu.ChatApp.SigningUp
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:44:2-47:12
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:44:65-101
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:44:12-64
+activity#com.TeamHoangDangTu.ChatApp.FriendAdder
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:48:1-51:12
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:48:66-102
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:48:11-65
+activity#com.TeamHoangDangTu.ChatApp.WaitingListFriends
+ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:52:1-55:12
+	android:screenOrientation
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:52:73-109
+	android:name
+		ADDED from D:\hocky2\SelectedTopic\AndroidChatter\app\src\main\AndroidManifest.xml:52:11-72

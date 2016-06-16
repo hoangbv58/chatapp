@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK">Done</string>
+    <string name="add">Add</string>
+    <string name="add_new_friend">Add Friend</string>
+    <string name="app_name">ChatApp</string>
+    <string name="approve_selected_friends">Approve</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="empty"/>
+    <string name="empty1"/>
+    <string name="exit_application">Log Out</string>
+    <string name="fill_both_username_and_password">You must fill Password and Username</string>
+    <string name="friend_list">List of Friends</string>
+    <string name="hello">ChatApp</string>
+    <string name="local_service_connected">Connected_local</string>
+    <string name="local_service_started">ChatApp Started</string>
+    <string name="local_service_stopped">ChatApp stopped</string>
+    <string name="login">Get In</string>
+    <string name="make_sure_username_and_password_correct">Is your username and password correct?</string>
+    <string name="message_cannot_be_sent">Message not sent</string>
+    <string name="messaging">Messaging</string>
+    <string name="new_friend_request_exist">New friend request</string>
+    <string name="no_friend">No Friends , select it via Menu</string>
+    <string name="not_connected_to_network">No available Network</string>
+    <string name="not_connected_to_service">Connection is not available</string>
+    <string name="password">Password:</string>
+    <string name="password_again">Password Again:</string>
+    <string name="request_sent">Friend Request Sent</string>
+    <string name="sign_up">Sign up</string>
+    <string name="signup_failed">Sign up failed</string>
+    <string name="signup_fill_all_fields">All Fields are necessary to fill up</string>
+    <string name="signup_successfull">You are registered successfuly </string>
+    <string name="signup_type_same_password_in_password_fields">Same Password Please</string>
+    <string name="signup_username_crashed">This username has already, try other ones</string>
+    <string name="type_friend_username">Your friend username</string>
+    <string name="user_offline">User Offline</string>
+    <string name="username">Username:</string>
+    <string name="username_and_password_length_short">Password/Username length must be 5 characters</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

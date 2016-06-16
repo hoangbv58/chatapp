@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login_box"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxEms="10"
+        android:text="@string/empty"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/login_box"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="username"
+        android:inputType="text"
+        android:maxEms="10"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:text = "Hola!!" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button"
+        android:text="Button"
+        android:src ="@drawable/login_button"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:background="@drawable/sign_up"
+        android:id="@+id/signup_button"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
