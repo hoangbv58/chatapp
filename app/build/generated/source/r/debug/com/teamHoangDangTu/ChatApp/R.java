@@ -5,9 +5,12 @@
  * should not be modified by hand.
  */
 
-package com.teamHoangDangTu.ChatApp;
+package com.TeamHoangDangTu.ChatApp;
 
 public final class R {
+    public static final class array {
+        public static final int color=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -25,29 +28,30 @@ public final class R {
         public static final int status_online=0x7f02000b;
     }
     public static final class id {
-        public static final int addFriend=0x7f070003;
-        public static final int add_button=0x7f070005;
-        public static final int button1=0x7f070009;
-        public static final int cancel=0x7f070004;
-        public static final int cancel_signUp=0x7f070016;
-        public static final int email=0x7f070014;
-        public static final int icon=0x7f070000;
-        public static final int imageView1=0x7f070008;
-        public static final int message=0x7f07000d;
-        public static final int messageHistory=0x7f07000c;
-        public static final int newFriendUsername=0x7f070002;
-        public static final int option_button=0x7f07000b;
-        public static final int password=0x7f070006;
-        public static final int passwordAgain=0x7f070013;
-        public static final int sendMessageButton=0x7f07000e;
-        public static final int signUp=0x7f070015;
-        public static final int signup_button=0x7f07000a;
-        public static final int start=0x7f070010;
-        public static final int stop=0x7f070011;
-        public static final int text=0x7f070001;
-        public static final int text1=0x7f07000f;
-        public static final int userName=0x7f070012;
-        public static final int username=0x7f070007;
+        public static final int addFriend=0x7f080003;
+        public static final int add_button=0x7f080005;
+        public static final int button1=0x7f080009;
+        public static final int cancel=0x7f080004;
+        public static final int cancel_signUp=0x7f080017;
+        public static final int container=0x7f08000b;
+        public static final int email=0x7f080015;
+        public static final int icon=0x7f080000;
+        public static final int imageView1=0x7f080008;
+        public static final int message=0x7f08000e;
+        public static final int messageHistory=0x7f08000d;
+        public static final int newFriendUsername=0x7f080002;
+        public static final int password=0x7f080006;
+        public static final int passwordAgain=0x7f080014;
+        public static final int sendMessageButton=0x7f08000f;
+        public static final int signUp=0x7f080016;
+        public static final int signup_button=0x7f08000a;
+        public static final int spinner=0x7f08000c;
+        public static final int start=0x7f080011;
+        public static final int stop=0x7f080012;
+        public static final int text=0x7f080001;
+        public static final int text1=0x7f080010;
+        public static final int userName=0x7f080013;
+        public static final int username=0x7f080007;
     }
     public static final class layout {
         public static final int android_chatter=0x7f040000;
@@ -64,43 +68,43 @@ public final class R {
         public static final int ic_launcher=0x7f030000;
     }
     public static final class string {
-        public static final int OK=0x7f060000;
-        public static final int add=0x7f060001;
-        public static final int add_new_friend=0x7f060002;
-        public static final int app_name=0x7f060003;
-        public static final int approve_selected_friends=0x7f060004;
-        public static final int cancel=0x7f060005;
-        public static final int email=0x7f060006;
-        public static final int empty=0x7f060007;
-        public static final int empty1=0x7f060008;
-        public static final int exit_application=0x7f060009;
-        public static final int fill_both_username_and_password=0x7f06000a;
-        public static final int friend_list=0x7f06000b;
-        public static final int hello=0x7f06000c;
-        public static final int local_service_connected=0x7f06000d;
-        public static final int local_service_started=0x7f06000e;
-        public static final int local_service_stopped=0x7f06000f;
-        public static final int login=0x7f060010;
-        public static final int make_sure_username_and_password_correct=0x7f060011;
-        public static final int message_cannot_be_sent=0x7f060012;
-        public static final int messaging=0x7f060013;
-        public static final int new_friend_request_exist=0x7f060014;
-        public static final int no_friend=0x7f060015;
-        public static final int not_connected_to_network=0x7f060016;
-        public static final int not_connected_to_service=0x7f060017;
-        public static final int password=0x7f060018;
-        public static final int password_again=0x7f060019;
-        public static final int request_sent=0x7f06001a;
-        public static final int sign_up=0x7f06001b;
-        public static final int signup_failed=0x7f06001c;
-        public static final int signup_fill_all_fields=0x7f06001d;
-        public static final int signup_successfull=0x7f06001e;
-        public static final int signup_type_same_password_in_password_fields=0x7f06001f;
-        public static final int signup_username_crashed=0x7f060020;
-        public static final int type_friend_username=0x7f060021;
-        public static final int user_offline=0x7f060022;
-        public static final int username=0x7f060023;
-        public static final int username_and_password_length_short=0x7f060024;
+        public static final int OK=0x7f070000;
+        public static final int add=0x7f070001;
+        public static final int add_new_friend=0x7f070002;
+        public static final int app_name=0x7f070003;
+        public static final int approve_selected_friends=0x7f070004;
+        public static final int cancel=0x7f070005;
+        public static final int email=0x7f070006;
+        public static final int empty=0x7f070007;
+        public static final int empty1=0x7f070008;
+        public static final int exit_application=0x7f070009;
+        public static final int fill_both_username_and_password=0x7f07000a;
+        public static final int friend_list=0x7f07000b;
+        public static final int hello=0x7f07000c;
+        public static final int local_service_connected=0x7f07000d;
+        public static final int local_service_started=0x7f07000e;
+        public static final int local_service_stopped=0x7f07000f;
+        public static final int login=0x7f070010;
+        public static final int make_sure_username_and_password_correct=0x7f070011;
+        public static final int message_cannot_be_sent=0x7f070012;
+        public static final int messaging=0x7f070013;
+        public static final int new_friend_request_exist=0x7f070014;
+        public static final int no_friend=0x7f070015;
+        public static final int not_connected_to_network=0x7f070016;
+        public static final int not_connected_to_service=0x7f070017;
+        public static final int password=0x7f070018;
+        public static final int password_again=0x7f070019;
+        public static final int request_sent=0x7f07001a;
+        public static final int sign_up=0x7f07001b;
+        public static final int signup_failed=0x7f07001c;
+        public static final int signup_fill_all_fields=0x7f07001d;
+        public static final int signup_successfull=0x7f07001e;
+        public static final int signup_type_same_password_in_password_fields=0x7f07001f;
+        public static final int signup_username_crashed=0x7f070020;
+        public static final int type_friend_username=0x7f070021;
+        public static final int user_offline=0x7f070022;
+        public static final int username=0x7f070023;
+        public static final int username_and_password_length_short=0x7f070024;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

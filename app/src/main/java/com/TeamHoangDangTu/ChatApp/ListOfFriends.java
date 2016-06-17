@@ -32,10 +32,10 @@ import com.TeamHoangDangTu.ChatApp.serve.MessagingService;
 import com.TeamHoangDangTu.ChatApp.toolBox.ControllerOfFriend;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfFriend;
 import com.TeamHoangDangTu.ChatApp.typo.InfoStatus;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 
-public class ListOfFriends extends ListActivity 
+public class  ListOfFriends extends ListActivity
 {
 	private static final int ADD_NEW_FRIEND_ID = Menu.FIRST;
 	private static final int EXIT_APP_ID = Menu.FIRST + 1;

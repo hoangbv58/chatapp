@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.TeamHoangDangTu.ChatApp.interfacer.Manager;
 import com.TeamHoangDangTu.ChatApp.serve.MessagingService;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 
 public class SigningUp extends Activity {
@@ -84,8 +84,7 @@ public class SigningUp extends Activity {
 						eMailText.length() > 0
 						)
 					{
-						//TODO check email address is valid
-						
+
 						if (passwordText.getText().toString().equals(passwordAgainText.getText().toString())){
 
 							if (usernameText.length() >= 5 && passwordText.length() >= 5) {

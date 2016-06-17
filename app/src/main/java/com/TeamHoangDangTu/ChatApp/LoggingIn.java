@@ -24,7 +24,7 @@ import android.widget.Toast;
 
 import com.TeamHoangDangTu.ChatApp.interfacer.Manager;
 import com.TeamHoangDangTu.ChatApp.serve.MessagingService;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 
 public class LoggingIn extends Activity {	
@@ -39,7 +39,6 @@ public class LoggingIn extends Activity {
     private EditText passwordText;
     
     private Manager imService;
-    public static final int SIGN_UP_ID = Menu.FIRST;
     public static final int EXIT_APP_ID = Menu.FIRST + 1;
    
 

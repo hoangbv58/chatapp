@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:orientation="vertical"
-    android:padding="10dip" 
+    android:padding="10dip"
+	android:id="@+id/container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 <!--    
@@ -18,19 +19,17 @@
         android:clickable="true"
         android:singleLine="true"
         android:editable="false" />
---> 
+-->
     <TextView   android:layout_width="139dp"
        			android:layout_height="wrap_content"
         		android:layout_marginBottom="10dip"
         		android:text="Messages:"/>
 
-	<ImageButton
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text=""
-		android:background="@drawable/option"
-		android:id="@+id/option_button"
-		android:layout_gravity="right"/>
+	<Spinner
+		android:layout_width="119dp"
+		android:layout_height="45dp"
+		android:id="@+id/spinner"
+		android:layout_gravity="right" />
 
 	<EditText 	android:id="@+id/messageHistory"
         		android:layout_width="fill_parent"

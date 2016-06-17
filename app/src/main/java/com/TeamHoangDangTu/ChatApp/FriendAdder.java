@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import com.TeamHoangDangTu.ChatApp.interfacer.Manager;
 import com.TeamHoangDangTu.ChatApp.serve.MessagingService;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 
 public class FriendAdder extends Activity implements OnClickListener {
@@ -117,7 +117,6 @@ public class FriendAdder extends Activity implements OnClickListener {
                    .setMessage(R.string.type_friend_username)
                    .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
                        public void onClick(DialogInterface dialog, int whichButton) {
-                           // TODO
                        }
                    });
         }

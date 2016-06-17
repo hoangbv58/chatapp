@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="color">
+			<item>Red</item>
+			<item>Green</item>
+			<item>BLue</item>
+			<item>White</item>
+	</string-array>
     <string name="OK">Done</string>
     <string name="add">Add</string>
     <string name="add_new_friend">Add Friend</string>

@@ -74,7 +74,9 @@ public class StorageManipulater extends SQLiteOpenHelper {
 	public Cursor get(String sender, String receiver) {
 					
 			SQLiteDatabase db = getWritableDatabase();
-			String SELECT_QUERY = "SELECT * FROM " + TABLE_NAME_MESSAGES + " WHERE " + MESSAGE_SENDER + " LIKE '" + sender + "' AND " + MESSAGE_RECEIVER + " LIKE '" + receiver + "' OR " + MESSAGE_SENDER + " LIKE '" + receiver + "' AND " + MESSAGE_RECEIVER + " LIKE '" + sender + "' ORDER BY " + _ID + " ASC";
+			String SELECT_QUERY = "SELECT * FROM " + TABLE_NAME_MESSAGES +
+					" WHERE " + MESSAGE_SENDER + " LIKE '" + sender + "' AND " + MESSAGE_RECEIVER + " LIKE '" + receiver +
+					"' OR " + MESSAGE_SENDER + " LIKE '" + receiver + "' AND " + MESSAGE_RECEIVER + " LIKE '" + sender + "' ORDER BY " + _ID + " ASC";
 			return db.rawQuery(SELECT_QUERY,null);
 			
 	}

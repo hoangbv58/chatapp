@@ -21,7 +21,7 @@ import android.util.Log;
 
 public class Socketer implements SocketerInterface
 {
-	private static final String AUTHENTICATION_SERVER_ADDRESS = "http://10.248.232.195/AndroidChatterDatabase/"; //
+	private static final String AUTHENTICATION_SERVER_ADDRESS = "http://192.168.194.2/AndroidChatterDatabase/"; //
 	private int listeningPort = 0;
 	private static final String HTTP_REQUEST_FAILED = null;
 	private HashMap<InetAddress, Socket> sockets = new HashMap<InetAddress, Socket>();

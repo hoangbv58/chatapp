@@ -36,5 +36,11 @@
 	<string name="message_cannot_be_sent">Message not sent</string>
 	<string name="empty"></string>
 	<string name="empty1"></string>
+	<string-array name="color">
+			<item>Red</item>
+			<item>Green</item>
+			<item>BLue</item>
+			<item>White</item>
+	</string-array>
 
 </resources>

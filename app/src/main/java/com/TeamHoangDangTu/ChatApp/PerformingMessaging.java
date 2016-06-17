@@ -2,6 +2,7 @@ package com.TeamHoangDangTu.ChatApp;
 
 
 import java.io.UnsupportedEncodingException;
+import java.util.Random;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -15,6 +16,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -22,9 +24,13 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnKeyListener;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.TeamHoangDangTu.ChatApp.interfacer.Manager;
@@ -33,7 +39,9 @@ import com.TeamHoangDangTu.ChatApp.toolBox.ControllerOfFriend;
 import com.TeamHoangDangTu.ChatApp.toolBox.StorageManipulater;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfFriend;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfMessage;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
+
+import static com.TeamHoangDangTu.ChatApp.R.*;
 
 
 public class PerformingMessaging extends Activity {
@@ -57,7 +65,7 @@ public class PerformingMessaging extends Activity {
         }
         public void onServiceDisconnected(ComponentName className) {
         	imService = null;
-            Toast.makeText(PerformingMessaging.this, R.string.local_service_stopped,
+            Toast.makeText(PerformingMessaging.this, string.local_service_stopped,
                     Toast.LENGTH_SHORT).show();
         }
     };
@@ -67,15 +75,15 @@ public class PerformingMessaging extends Activity {
 	{
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.message); //messaging_screen);
+		setContentView(layout.message); //messaging_screen);
 				
-		messageHistoryText = (EditText) findViewById(R.id.messageHistory);
+		messageHistoryText = (EditText) findViewById(id.messageHistory);
 		
-		messageText = (EditText) findViewById(R.id.message);
+		messageText = (EditText) findViewById(id.message);
 		
 		messageText.requestFocus();			
 		
-		sendMessageButton = (Button) findViewById(R.id.sendMessageButton);
+		sendMessageButton = (Button) findViewById(id.sendMessageButton);
 		
 		Bundle extras = this.getIntent().getExtras();
 		
@@ -86,9 +94,13 @@ public class PerformingMessaging extends Activity {
 		String msg = extras.getString(InfoOfMessage.MESSAGETEXT);
 
 		setTitle("" + friend.userName);
+		final int[] color = {Color.RED, Color.BLUE,Color.GREEN,Color.WHITE};
 		localstoragehandler = new StorageManipulater(this);
 		dbCursor = localstoragehandler.get(friend.userName, MessagingService.USERNAME );
-		
+
+		final LinearLayout bgElement = (LinearLayout) findViewById(R.id.container);
+		bgElement.setBackgroundColor(color[1]);
+
 		if (dbCursor.getCount() > 0){
 		int noOfScorer = 0;
 		dbCursor.moveToFirst();
@@ -96,7 +108,7 @@ public class PerformingMessaging extends Activity {
 		    {
 		        noOfScorer++;
 
-				this.appendToMessageHistory(dbCursor.getString(2) , dbCursor.getString(3));
+				this.appendToMessageHistory(dbCursor.getString(2) , dbCursor.getString(3),1);
 		        dbCursor.moveToNext();
 		    }
 		}
@@ -104,18 +116,41 @@ public class PerformingMessaging extends Activity {
 		
 		if (msg != null) 
 		{
-			this.appendToMessageHistory(friend.userName , msg);
+			this.appendToMessageHistory(friend.userName , msg,1);
 			((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel((friend.userName+msg).hashCode());
 		}
 
-		ImageButton option = (ImageButton) findViewById(R.id.option_button);
 
-		option.setOnClickListener(new OnClickListener() {
+		Spinner spinner = (Spinner) findViewById(R.id.spinner);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				array.color, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner.setAdapter(adapter);
+
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
-			public void onClick(View v) {
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				if (position == 0) {
+					bgElement.setBackgroundColor(color[0]);
+				}
+				if (position == 1) {
+					bgElement.setBackgroundColor(color[1]);
+				}
+				if (position == 2) {
+					bgElement.setBackgroundColor(color[2]);
+				}
+				if (position == 3) {
+					bgElement.setBackgroundColor(color[3]);
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
 
 			}
 		});
+
+
 
 		sendMessageButton.setOnClickListener(new OnClickListener(){
 			CharSequence message;
@@ -124,7 +159,7 @@ public class PerformingMessaging extends Activity {
 				message = messageText.getText();
 				if (message.length()>0) 
 				{		
-					appendToMessageHistory(imService.getUsername(), message.toString());
+					appendToMessageHistory(imService.getUsername(), message.toString(),1);
 					
 					localstoragehandler.insert(imService.getUsername(), friend.userName, message.toString());
 								
@@ -139,15 +174,14 @@ public class PerformingMessaging extends Activity {
 
 										public void run() {
 											
-									        Toast.makeText(getApplicationContext(),R.string.message_cannot_be_sent, Toast.LENGTH_LONG).show();
+									        Toast.makeText(getApplicationContext(), string.message_cannot_be_sent, Toast.LENGTH_LONG).show();
 
-											
 										}
 										
 									});
 								}
 							} catch (UnsupportedEncodingException e) {
-								Toast.makeText(getApplicationContext(),R.string.message_cannot_be_sent, Toast.LENGTH_LONG).show();
+								Toast.makeText(getApplicationContext(), string.message_cannot_be_sent, Toast.LENGTH_LONG).show();
 
 								e.printStackTrace();
 							}
@@ -180,7 +214,7 @@ public class PerformingMessaging extends Activity {
 		switch (id)
 		{
 		case MESSAGE_CANNOT_BE_SENT:
-			message = R.string.message_cannot_be_sent;
+			message = string.message_cannot_be_sent;
 		break;
 		}
 		
@@ -192,7 +226,7 @@ public class PerformingMessaging extends Activity {
 		{
 			return new AlertDialog.Builder(PerformingMessaging.this)       
 			.setMessage(message)
-			.setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+			.setPositiveButton(string.OK, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int whichButton) {
 				}
 			})        
@@ -239,7 +273,7 @@ public class PerformingMessaging extends Activity {
 			if (username != null && message != null)
 			{
 				if (friend.userName.equals(username)) {
-					appendToMessageHistory(username, message);
+					appendToMessageHistory(username, message,1);
 					localstoragehandler.insert(username,imService.getUsername(), message);
 					
 				}
@@ -257,10 +291,31 @@ public class PerformingMessaging extends Activity {
 	};
 	private MessageReceiver messageReceiver = new MessageReceiver();
 	
-	public  void appendToMessageHistory(String username, String message) {
-		if (username != null && message != null) {
-			messageHistoryText.append(username + ":\n");								
-			messageHistoryText.append(message + "\n");
+	public  void appendToMessageHistory(String username, String message, int pos) {
+		if( pos == 0){
+			if (username != null && message != null) {
+				messageHistoryText.append(username + ":\n");
+				messageHistoryText.setTextColor(Color.BLACK);
+				messageHistoryText.append(message + "\n");
+				messageHistoryText.setTextColor(Color.BLACK);
+			}
+		}
+		if (pos == 1){
+			if (username != null && message != null) {
+				messageHistoryText.append(username + ":\n");
+				messageHistoryText.setTextColor(Color.RED);
+				messageHistoryText.append(message + "\n");
+				messageHistoryText.setTextColor(Color.RED);
+			}
+		}
+
+		if(pos ==3){
+			if (username != null && message != null) {
+				messageHistoryText.append(username + ":\n");
+				messageHistoryText.setTextColor(Color.GREEN);
+				messageHistoryText.append(message + "\n");
+				messageHistoryText.setTextColor(Color.GREEN);
+			}
 		}
 	}
 	

@@ -37,7 +37,7 @@ import com.TeamHoangDangTu.ChatApp.toolBox.MessageController;
 import com.TeamHoangDangTu.ChatApp.toolBox.StorageManipulater;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfFriend;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfMessage;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 import org.xml.sax.SAXException;
 
@@ -62,7 +62,7 @@ public class MessagingService extends Service implements Manager, Updater {
 	public static final String FRIEND_LIST_UPDATED = "Take Friend List";
 	public static final String MESSAGE_LIST_UPDATED = "Take Message List";
 	public ConnectivityManager conManager = null; 
-	private final int UPDATE_TIME_PERIOD = 15000;
+	private final int UPDATE_TIME_PERIOD = 1500;
 
 	private String rawFriendList = new String();
 	private String rawMessageList = new String();
@@ -73,7 +73,6 @@ public class MessagingService extends Service implements Manager, Updater {
 	private String username;
 	private String password;
 	private boolean authenticatedUser = false;
-	 // timer to take the updated data from server
 	private Timer timer;
 	
 
@@ -93,7 +92,7 @@ public class MessagingService extends Service implements Manager, Updater {
     {   	
          mNM = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 
-         localstoragehandler = new StorageManipulater(this);
+		localstoragehandler = new StorageManipulater(this);
     	conManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
     	new StorageManipulater(this);
     	
@@ -119,7 +118,6 @@ public class MessagingService extends Service implements Manager, Updater {
 			}
 		};		
 		thread.start();
-    
     }
 
 
@@ -134,7 +132,7 @@ public class MessagingService extends Service implements Manager, Updater {
 
     private void showNotification(String username, String msg) 
 	{       
-    	String title = "AndroidIM: You got a new Message! (" + username + ")";
+    	String title = "You got a new Message! (" + username + ")";
     	String text = username + ": " + 
      				((msg.length() < 5) ? msg : msg.substring(0, 5)+ "...");
     	

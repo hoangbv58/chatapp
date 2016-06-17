@@ -1,38 +1,38 @@
 [
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\not.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\not.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loggin_in.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\loggin_in.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\signingup.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\signingup.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\friend_list_screen.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\friend_list_screen.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\friend_list_screen.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\friend_list_screen.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_friends.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\list_friends.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\message.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\not.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\not.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\friendfinderadder.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\friendfinderadder.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\friendfinderadder.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\friendfinderadder.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_friends.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\list_friends.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\android_chatter.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\android_chatter.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\android_chatter.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\android_chatter.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\message.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\message.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loggin_in.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\loggin_in.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\signingup.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\signingup.xml"
     },
     {
-        "merged": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\service_local.xml",
-        "source": "D:\\hocky2\\SelectedTopic\\AndroidChatter\\app\\src\\main\\res\\layout\\service_local.xml"
+        "merged": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\service_local.xml",
+        "source": "D:\\hocky2\\SelectedTopic\\ChatApp\\app\\src\\main\\res\\layout\\service_local.xml"
     }
 ]

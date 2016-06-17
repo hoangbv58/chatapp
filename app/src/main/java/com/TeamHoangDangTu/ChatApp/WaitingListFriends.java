@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.TeamHoangDangTu.ChatApp.interfacer.Manager;
 import com.TeamHoangDangTu.ChatApp.serve.MessagingService;
 import com.TeamHoangDangTu.ChatApp.typo.InfoOfFriend;
-import com.teamHoangDangTu.ChatApp.R;
+import com.TeamHoangDangTu.ChatApp.R;
 
 
 public class WaitingListFriends extends ListActivity {

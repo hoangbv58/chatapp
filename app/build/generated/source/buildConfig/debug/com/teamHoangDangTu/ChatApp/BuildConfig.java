@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.teamHoangDangTu.ChatApp;
+package com.TeamHoangDangTu.ChatApp;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
